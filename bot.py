@@ -68,6 +68,7 @@ def find_appointments(update):
                 print("oops...\n", r.text)
                 update.bot.send_message(chat_id=user_config['telegram_chat_id'], text="oops...\n{}".format(r.text))
                 time.sleep(3600)
+                break
             else:
                 if r.json()["TotalResults"] != 0:
                     for res_date in r.json()["Results"]:
