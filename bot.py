@@ -67,7 +67,7 @@ def find_appointments(update):
             if r.status_code != 200 or r.json()["Success"] != True:
                 print("oops...\n", r.text)
                 update.bot.send_message(chat_id=user_config['telegram_chat_id'], text="oops...\n{}".format(r.text))
-                time.sleep(3600)
+                time.sleep(60 * 10)
                 break
             else:
                 if r.json()["TotalResults"] != 0:
