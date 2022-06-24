@@ -1,7 +1,7 @@
 {
 	"telegram_api_key": "",
 	"telegram_chat_id": "",
-	"authorization": "",
-	"cookie": "",
-	"preparedvisittoken": ""
+	"id": "",
+	"phone_number": "",
+	"authorization": ""
 }
